@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>Dipita Studio — Web Design Yaoundé</title>
+    <link rel="stylesheet" href="style-light.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Great+Vibes&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="logo">
+        <svg width="32" height="38" viewBox="0 0 32 38">
+          <path
+            d="M26,2 L10,2 L10,6 L6,6 L6,10 L4,10 L4,20 L6,20 L6,24 L10,24 L10,28 L28,28 L28,24 L30,24 L30,20 L28,20 L28,16 L10,16 L10,20 L8,20 L8,10 L28,10 L28,6 L30,6 L30,2 Z"
+            fill="#C9A84C"
+          />
+          <path d="M12,4 L26,4 L26,8 L12,8 Z" fill="#FDFAF6" />
+          <path d="M10,18 L28,18 L28,22 L10,22 Z" fill="#FDFAF6" />
+        </svg>
+        <div class="logo-divider"></div>
+        <div class="logo-text">
+          <span class="logo-script">Dipita</span>
+          <span class="logo-sub">Studio</span>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="#work">Travaux</a>
+        <a href="#services">Services</a>
+        <a href="#about">À propos</a>
+      </div>
+      <a href="https://wa.me/237654082108" class="btn-wa" target="_blank"
+        >💬 WhatsApp</a
+      >
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#work">Travaux</a>
+      <a href="#services">Services</a>
+      <a href="#about">À propos</a>
+      <a href="https://wa.me/237654082108" target="_blank">💬 WhatsApp</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <div class="hero-content">
+          <p class="hero-tag">Studio créatif · Yaoundé, Cameroun</p>
+          <h1 class="hero-title">
+            Des sites web qui<br />
+            <em>attirent vos clients.</em>
+          </h1>
+          <p class="hero-desc">
+            J'aide les entrepreneurs à Yaoundé et en Afrique à obtenir plus de
+            clients grâce à des sites rapides, modernes et efficaces. Design
+            niveau international, prix adaptés au marché local.
+          </p>
+        </div>
+        <div class="hero-actions">
+          <a
+            href="https://wa.me/237654082108"
+            class="btn-gold-wa"
+            target="_blank"
+          >
+            💬 Discuter sur WhatsApp
+          </a>
+          <a href="#work" class="btn-outline">Voir nos travaux</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <!-- Hero image = above the fold, donc PAS de lazy loading -->
+        <img src="heros.jpeg" alt="Workspace Dipita Studio" />
+        <div class="hero-badge">
+          <p class="hero-badge-tag">Studio créatif</p>
+          <p class="hero-badge-title">Dipita Studio · Yaoundé 🇨🇲</p>
+          <p class="hero-badge-sub">Web Design & Visual Identity</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <div class="stats">
+      <div class="stat">
+        <p class="stat-num">03+</p>
+        <p class="stat-label">Projets livrés</p>
+      </div>
+      <div class="stat">
+        <p class="stat-num">100%</p>
+        <p class="stat-label">Clients satisfaits</p>
+      </div>
+      <div class="stat">
+        <p class="stat-num">48h</p>
+        <p class="stat-label">Délai de réponse</p>
+      </div>
+      <div class="stat">
+        <p class="stat-num">2026</p>
+        <p class="stat-label">Fondé à Yaoundé</p>
+      </div>
+    </div>
+
+    <!-- WORK -->
+    <section class="section" id="work">
+      <div class="section-header">
+        <h2 class="section-title">Nos <em>travaux</em></h2>
+        <a href="#" class="section-link">Voir tout →</a>
+      </div>
+
+      <div class="work-grid">
+        <!-- Maydi Vêtements — REAL project -->
+        <div class="work-card">
+          <div class="work-card-img">
+            <!-- URL mise à jour → Vercel -->
+            <img src="3.jpg" alt="Maydi Vêtements" loading="lazy" />
+          </div>
+          <div class="work-card-info">
+            <p class="work-card-tag">Mode · Landing Page</p>
+            <h3 class="work-card-title">Maydi Vêtements</h3>
+            <p class="work-card-desc">
+              Landing page pour boutique de vêtements — galerie photo élégante,
+              design Hermès, typographie Monsieur La Doulaise.
+            </p>
+            <a
+              href="https://maydi-vetements.vercel.app/"
+              target="_blank"
+              class="work-card-arrow"
+              >→</a
+            >
+          </div>
+        </div>
+
+        <!-- BookZone — REAL project -->
+        <div class="work-card">
+          <div class="work-card-img">
+            <img src="bookzone.jpg" alt="BookZone" loading="lazy" />
+          </div>
+          <div class="work-card-info">
+            <p class="work-card-tag">Tech · Application web</p>
+            <h3 class="work-card-title">BookZone</h3>
+            <p class="work-card-desc">
+              Système de gestion de bibliothèque — PHP, MySQL, API REST Java
+              Spring Boot.
+            </p>
+            <a
+              href="https://github.com/Dipita237/bookzone"
+              target="_blank"
+              class="work-card-arrow"
+              >→</a
+            >
+          </div>
+        </div>
+
+        <!-- Kamer Bites — concept -->
+        <div class="work-card">
+          <div class="work-card-img">
+            <img src="Kamer_bites.jpeg" alt="Kamer Bites" loading="lazy" />
+          </div>
+          <div class="work-card-info">
+            <p class="work-card-tag">Restaurant · Concept</p>
+            <h3 class="work-card-title">Kamer Bites</h3>
+            <p class="work-card-desc">
+              Concept de site vitrine pour restaurant camerounais — menu,
+              ambiance, réservation.
+            </p>
+            <span class="work-card-arrow">→</span>
+          </div>
+        </div>
+
+        <!-- YaoundéTech — concept -->
+        <div class="work-card">
+          <div class="work-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80"
+              alt="YaoundéTech"
+              loading="lazy"
+            />
+          </div>
+          <div class="work-card-info">
+            <p class="work-card-tag">Tech · Concept</p>
+            <h3 class="work-card-title">YaoundéTech</h3>
+            <p class="work-card-desc">
+              Concept de site corporate pour startup digitale locale — moderne
+              et épuré.
+            </p>
+            <span class="work-card-arrow">→</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services-bg" id="services">
+      <div class="section-header">
+        <h2 class="section-title">Nos <em>services</em></h2>
+        <a href="#contact" class="section-link">Tarifs →</a>
+      </div>
+      <div class="services-grid">
+        <div class="svc">
+          <p class="svc-num">01</p>
+          <h3 class="svc-name">Site web professionnel</h3>
+          <ul class="svc-check">
+            <li>Attire plus de clients</li>
+            <li>Chargement rapide</li>
+            <li>Adapté mobile</li>
+            <li>Lien WhatsApp intégré</li>
+          </ul>
+        </div>
+        <div class="svc">
+          <p class="svc-num">02</p>
+          <h3 class="svc-name">Identité visuelle</h3>
+          <ul class="svc-check">
+            <li>Logo professionnel</li>
+            <li>Palette de couleurs</li>
+            <li>Typographie cohérente</li>
+            <li>Formats réseaux sociaux</li>
+          </ul>
+        </div>
+        <div class="svc">
+          <p class="svc-num">03</p>
+          <h3 class="svc-name">Landing page</h3>
+          <ul class="svc-check">
+            <li>Page focalisée conversion</li>
+            <li>Formulaire de contact</li>
+            <li>Bouton WhatsApp</li>
+            <li>Livraison en 72h</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section temo-bg">
+      <div class="section-header">
+        <h2 class="section-title">Ils nous font <em>confiance</em></h2>
+      </div>
+      <div class="temo-grid">
+        <div class="temo-card temo-placeholder">
+          <p class="temo-placeholder-text">
+            Nous construisons notre réputation
+          </p>
+          <p class="temo-placeholder-sub">
+            Soyez parmi nos premiers clients<br />
+            et obtenez un tarif de lancement 🎯
+          </p>
+        </div>
+        <div class="temo-card temo-placeholder">
+          <p class="temo-placeholder-text">Votre témoignage ici</p>
+          <p class="temo-placeholder-sub">
+            Vous avez travaillé avec nous ?<br />
+            Contactez-nous sur WhatsApp
+          </p>
+        </div>
+        <div class="temo-card temo-placeholder">
+          <p class="temo-placeholder-text">Votre témoignage ici</p>
+          <p class="temo-placeholder-sub">
+            Vous avez travaillé avec nous ?<br />
+            Contactez-nous sur WhatsApp
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title">Pourquoi <em>Dipita Studio ?</em></h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-item">
+          <div class="why-icon">🇨🇲</div>
+          <div>
+            <h3 class="why-title">Ancré dans le marché camerounais</h3>
+            <p class="why-desc">
+              Je comprends vos clients, votre marché et les usages locaux —
+              WhatsApp, Mobile Money, réseaux sociaux.
+            </p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">💰</div>
+          <div>
+            <h3 class="why-title">Prix adaptés aux entrepreneurs locaux</h3>
+            <p class="why-desc">
+              Design niveau international à des tarifs accessibles pour les PME
+              et entrepreneurs camerounais.
+            </p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">⚡</div>
+          <div>
+            <h3 class="why-title">Suivi rapide sur WhatsApp</h3>
+            <p class="why-desc">
+              Pas de mails qui se perdent. Je réponds sous 24h directement sur
+              WhatsApp tout au long du projet.
+            </p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">🏆</div>
+          <div>
+            <h3 class="why-title">Design niveau international</h3>
+            <p class="why-desc">
+              Des sites qui rivalisent avec les meilleures agences — pensés pour
+              convertir et impressionner.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="dipita.png" alt="Dipita" loading="lazy" />
+      </div>
+      <div class="about-content">
+        <p class="about-tag">À propos</p>
+        <h2 class="about-title">
+          Un studio créatif<br />
+          <em>né à Yaoundé.</em>
+        </h2>
+        <p class="about-text">
+          Je suis Dipita, développeur web fullstack et designer basé à Yaoundé,
+          Cameroun. Je crée des expériences digitales qui aident les
+          entrepreneurs locaux à rayonner en ligne — avec le même niveau
+          d'exigence que les grandes agences internationales, mais ancré dans
+          notre réalité africaine.
+        </p>
+        <p class="about-signature">Dipita</p>
+      </div>
+    </section>
+
+    <!-- PASTELS -->
+    <div class="pastels">
+      <span class="pill" style="background: #fce8f0; color: #b05470"
+        >Design moderne</span
+      >
+      <span class="pill" style="background: #e8f0fc; color: #2c5eb0"
+        >Livraison rapide</span
+      >
+      <span class="pill" style="background: #f0fce8; color: #3a8c2a"
+        >100% sur mesure</span
+      >
+      <span class="pill" style="background: #fdf5e0; color: #9c7420"
+        >Basé à Yaoundé 🇨🇲</span
+      >
+      <span class="pill" style="background: #f0e8fc; color: #6b3aaa"
+        >Bilingue FR/EN</span
+      >
+      <span class="pill" style="background: #fcf0e8; color: #b06020"
+        >Fullstack Dev</span
+      >
+    </div>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="contact-left">
+        <p class="contact-tag">Contact</p>
+        <h2 class="contact-title">Démarrons<br />votre <em>projet.</em></h2>
+        <p class="contact-desc">
+          Un projet en tête ? Discutons directement sur WhatsApp — c'est plus
+          rapide et plus simple.
+        </p>
+        <a
+          href="https://wa.me/237654082108"
+          class="contact-wa-btn"
+          target="_blank"
+        >
+          💬 Écrire sur WhatsApp
+        </a>
+        <div class="contact-links">
+          <span class="contact-link">dipitastudios@gmail.com</span>
+          <span class="contact-link">+237 654 082 108</span>
+          <span class="contact-link">dipitastudio.carrd.co</span>
+        </div>
+      </div>
+      <div class="contact-right">
+        <form action="https://formspree.io/f/xpqoorjw" method="POST">
+          <input
+            class="contact-input"
+            type="text"
+            name="name"
+            placeholder="Votre nom"
+            required
+          />
+          <input
+            class="contact-input"
+            type="email"
+            name="email"
+            placeholder="Votre email"
+            required
+          />
+          <textarea
+            class="contact-input"
+            name="message"
+            placeholder="Votre projet en quelques mots..."
+            required
+          ></textarea>
+          <button type="submit" class="contact-btn">Envoyer le message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <span class="f-logo">Dipita Studio</span>
+      <span class="f-copy">© 2026 Dipita Studio · Yaoundé, Cameroun</span>
+      <div class="f-links">
+        <a href="https://linkedin.com/in/dipita" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Dipita237" target="_blank">GitHub</a>
+        <a href="https://wa.me/237654082108" target="_blank">WhatsApp</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
